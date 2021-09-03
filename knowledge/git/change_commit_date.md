@@ -5,9 +5,9 @@ GitコミットにはAuthorDateとCommitDateが存在するため両方を修正
 ### 直前のコミットを編集する
 
 ```sh
-$ git commit --amend --date="2021-09-01T10:10:00+0900"
+$ git commit --amend --no-edit --date="2021-09-01T10:10:00+0900"
 # 現在日時に設定
-$ git commit --amend --date $(date --iso-8601=seconds)
+$ git commit --amend --no-edit --date $(date --iso-8601=seconds)
 ```
 
 ### 複数のコミットを編集する
@@ -34,9 +34,9 @@ $ git rebase -i HEAD~3
 古いコミットから順に修正を行う
 
 ```sh
-$ git commit --amend --date="2021-09-01T10:10:00+0900"
+$ git commit --amend --no-edit --date="2021-09-01T10:10:00+0900"
 # 現在日時に設定
-$ git commit --amend --date $(date --iso-8601=seconds)
+$ git commit --amend --no-edit --date $(date --iso-8601=seconds)
 
 # 次のコミットに移動
 $ git rebase --continue
