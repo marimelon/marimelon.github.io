@@ -1,5 +1,5 @@
 
-# Ubuntu20.4でのディスク拡張(ext4)
+# [Ubuntu20.4でのディスク拡張(ext4)](https://marimelon.github.io/knowledge/knowledge/linux/expand_disk_ubuntu20.4)
 
 ### 状態確認
 ディスクサイズ(vda) 10GB  
