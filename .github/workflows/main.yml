@@ -1,0 +1,24 @@
+name: Add Github Pages URL
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run script
+        run: bash .github/workflows/script.bash
+        
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Add Github Pages URL
+          commit_user_name: github-actions
+          commit_user_email: action@github.com
+          commit_author: github-actions <action@github.com>
+        
