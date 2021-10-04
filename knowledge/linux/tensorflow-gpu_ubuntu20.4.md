@@ -45,7 +45,7 @@ Mon Oct  4 09:46:47 2021
 
 下記URLからCUDAのインストールコマンドを調べる
 
-https://developer.nvidia.com/cuda-downloads
+<https://developer.nvidia.com/cuda-downloads>
 
 
 Linux->x86_64->Ubuntu->20.04->deb_local の場合
@@ -62,7 +62,7 @@ $ sudo apt-get -y install cuda
 ## cuDNN Install
 
 Nvidia DeveloperからcuDNNをダウンロードする。(ログイン必要)  
-https://developer.nvidia.com/rdp/cudnn-download
+<https://developer.nvidia.com/rdp/cudnn-download>
 
 ### dpkgを使用する場合
 
