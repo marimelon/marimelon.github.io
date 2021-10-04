@@ -1,4 +1,4 @@
-# JupyterHubの構築メモ
+# [JupyterHubの構築メモ](https://marimelon.github.io/knowledge/knowledge/linux/jupyter_hub_install_ubuntu20.4)
 
 ## 環境
 - Ubuntu20.4
