@@ -1,4 +1,4 @@
-# [コミットの日時を変更する](https://marimelon.github.io/knowledge/knowledge/git/change_commit_date)
+# [コミットの日時を変更する](https://marimelon.github.io/knowledge/note/git/change_commit_date)
 GitコミットにはAuthorDateとCommitDateが存在するため両方を修正する必要がある
 
 ## 最初にCommitDateを編集する
