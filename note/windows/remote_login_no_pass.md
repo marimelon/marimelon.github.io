@@ -1,4 +1,4 @@
-# [パスワードの設定されてないアカウントでリモートデスクトップを利用する](https://marimelon.github.io/knowledge/note/windows/remote_login_no_pass)
+# [パスワードの設定されてないアカウントでリモートデスクトップを利用する](https://marimelon.github.io/note/windows/remote_login_no_pass)
 グループポリシー設定から
 ```
 コンピュータの構成→Windowsの設定→セキュリティの設定→

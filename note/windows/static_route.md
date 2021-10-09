@@ -1,4 +1,4 @@
-# [Windowsにスタティックルートを設定する](https://marimelon.github.io/knowledge/note/windows/static_route)
+# [Windowsにスタティックルートを設定する](https://marimelon.github.io/note/windows/static_route)
 
 192.168.2.0/24 へのアクセスを192.168.1.1を介してアクセスするルート設定<br>
 -p は永続化

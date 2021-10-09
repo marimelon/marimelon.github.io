@@ -1,4 +1,4 @@
-# [TensorFlowでGPUを使う(Ubuntu20.4)](https://marimelon.github.io/knowledge/note/linux/tensorflow-gpu_ubuntu20.4)
+# [TensorFlowでGPUを使う(Ubuntu20.4)](https://marimelon.github.io/note/linux/tensorflow-gpu_ubuntu20.4)
 
 ## 環境
 - Ubuntu20.4

@@ -1,4 +1,4 @@
-# [Arm版OracleLinux(7系)へのdocker-composeのインストール](https://marimelon.github.io/knowledge/note/linux/oracle_linux_aarch64_dockercompose)
+# [Arm版OracleLinux(7系)へのdocker-composeのインストール](https://marimelon.github.io/note/linux/oracle_linux_aarch64_dockercompose)
 
 GithubリリースにはArm版が無いためpipでインストールを行う。
 

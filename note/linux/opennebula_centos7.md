@@ -1,4 +1,4 @@
-# [OpenNebula構築手順記録 (CentOS7)](https://marimelon.github.io/knowledge/note/linux/opennebula_centos7)
+# [OpenNebula構築手順記録 (CentOS7)](https://marimelon.github.io/note/linux/opennebula_centos7)
 
 ## 共通処理
 ### リポジトリ登録

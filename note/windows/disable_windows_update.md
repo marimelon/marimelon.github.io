@@ -1,4 +1,4 @@
-# [WindowsUpdateの自動更新を無効化する](https://marimelon.github.io/knowledge/note/windows/disable_windows_update)
+# [WindowsUpdateの自動更新を無効化する](https://marimelon.github.io/note/windows/disable_windows_update)
 
 ```
 ローカルコンピューターポリシー 

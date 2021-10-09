@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function get_url () {
-    echo "https://marimelon.github.io/knowledge/${1#./}" | sed -e 's/.md//g'
+    echo "https://marimelon.github.io/${1#./}" | sed -e 's/.md//g'
 }
 
 for file in `\find . -name '*.md'`; do

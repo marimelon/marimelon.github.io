@@ -1,1 +1,1 @@
-# [marimelon knowledge note](https://marimelon.github.io/knowledge/index)
+# [marimelon knowledge note](https://marimelon.github.io/index)
