@@ -1,0 +1,47 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+    max-width: 768px+300px+30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f6f8fa;
+}
+
+@media (max-width: 768px+300px+30px) {
+    .toc {
+        display: none;
+    }
+    .markdown-body {
+        float: none !important;
+    }
+}
+
+.toc {
+    padding-left: 10px;
+    float: left;
+    position: fixed;
+    top: 20px;
+
+    ul {
+        padding-left: 10px;
+
+        li {
+            list-style-type: none;
+            margin: 5px 0px;
+        }
+
+        a {
+            color: #666;
+        }
+    }
+}
+
+.markdown-body {
+    float: right;
+    background-color: white;
+    padding-top: 30px;
+    width: 100%;
+}
