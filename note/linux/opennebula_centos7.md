@@ -183,7 +183,7 @@ $ sudo yum install nfs-utils
 
 ```sh
 # Example(storageId = 101)
-150.89.236.105:/var/lib/one//datastores/101 /var/lib/one//datastores/101 nfs   soft,intr,rsize=8192,wsize=8192,nfsvers=4.2
+nfs_server:/var/lib/one//datastores/101 /var/lib/one//datastores/101 nfs   soft,intr,rsize=8192,wsize=8192,nfsvers=4.2
 ```
 
 <!--
