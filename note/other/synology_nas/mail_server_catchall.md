@@ -1,4 +1,4 @@
-# SynologyNasのMailServerでキャッチオールを設定する
+# [SynologyNasのMailServerでキャッチオールを設定する](https://marimelon.github.io/note/other/synology_nas/mail_server_catchall)
 
 NASにSSHでログインし、ファイルを書き換えたあとパッケージセンターからMailServerを再起動する。  
 `user_name`は受信したいユーザ名に置き換える
