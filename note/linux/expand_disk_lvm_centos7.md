@@ -1,5 +1,5 @@
 
-# CentOS7でのディスク拡張(LVM)
+# [CentOS7でのディスク拡張(LVM)](https://marimelon.github.io/note/linux/expand_disk_lvm_centos7)
 
 以下の順番でディスクの拡張を行う。
 
