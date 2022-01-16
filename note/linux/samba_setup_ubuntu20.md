@@ -1,4 +1,4 @@
-# Sambaのインストール(Ubuntu20)
+# [Sambaのインストール(Ubuntu20)](https://marimelon.github.io/note/linux/samba_setup_ubuntu20)
 
 ## Sambaのインストール
 
