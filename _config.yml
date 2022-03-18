@@ -1,4 +1,7 @@
 lang: ja-JP
 google_analytics: G-G2Z5VJFZTD
+
+markdown: GFM
+
 plugins:
   - jekyll-sitemap
