@@ -1,4 +1,4 @@
-# Hyper-V上のUbuntuセットアップ(備忘録)
+# [Hyper-V上のUbuntuセットアップ(備忘録)](https://marimelon.github.io/note/hyper-v/ubuntu-setup)
 
 ## 環境
 Ubuntu20.4 Desktop 日本語エディション  
