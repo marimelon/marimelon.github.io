@@ -1,4 +1,4 @@
-name: Add Github Pages URL
+name: Main Github Pages Workflow
 
 on:
   push:
@@ -6,19 +6,46 @@ on:
   workflow_dispatch:
 
 jobs:
-  main:
+  add_article_url:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run script
-        run: bash .github/workflows/script.bash
-        
+      - name: Add article url
+        run: bash .github/workflows/add_article_url.bash
+
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Add Github Pages URL
           commit_user_name: github-actions
           commit_user_email: action@github.com
           commit_author: github-actions <action@github.com>
-        
+
+  generate_readme:
+    runs-on: ubuntu-latest
+    needs: add_article_url
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install pandoc
+        run: sudo apt-get install -y pandoc
+
+      - name: Download bash-tpl
+        run: |
+          sudo wget https://github.com/TekWizely/bash-tpl/releases/download/v0.5.0/bash-tpl -O /usr/local/bin/bash-tpl
+          sudo chmod +x /usr/local/bin/bash-tpl
+
+      - name: Generate README.md
+        run: source <( bash-tpl .github/workflows/README.tpl ) > README.md
+
+      - name: Pull previous steps commit
+        run: git pull
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Generated README
+          commit_user_name: github-actions
+          commit_user_email: action@github.com
+          commit_author: github-actions <action@github.com>
