@@ -49,6 +49,13 @@ $ sudo -u oneadmin /bin/bash
 [oneadmin@localhost ~]$ exit
 ```
 
+- あとから変更する方法
+
+```shell
+$ [oneadmin@localhost ~]$ oneuser login oneadmin
+$ [oneadmin@localhost ~]$ oneuser passwd oneadmin 'newpassword'
+```
+
 ### NFS設定(Option)
 
 ```shell
