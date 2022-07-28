@@ -339,6 +339,29 @@ $ sudo find /sys/kernel/iommu_groups/ -type l
 
 ### /dev/vfio/N の所有権をoneadminに変更する
 
+`/etc/udev/rules.d`にルールを追加する
+
+/etc/udev/rules.d/10-qemu-hw-oneadmin.rules
+```
+SUBSYSTEM=="vfio", OWNER="oneadmin", GROUP="oneadmin"
+```
+
+ルールを再読み込み
+
+```
+$ udevadm control --reload-rules
+$ udevadm trigger
+```
+
+`/dev/vfio/`配下の権限が変わっているか確認する  
+変更されてない場合、再起動する
+
+<details>
+
+<summary>手動で書き換える</summary>
+
+`N`をデバイスの数字に変更する
+
 ```sh
 $ sudo chown oneadmin:oneadmin /dev/vfio/N
 $ ls /dev/vfio/ -l
@@ -347,6 +370,8 @@ crw------- 1 oneadmin oneadmin 242,   0  9月 24 16:59 28
 crw------- 1 oneadmin oneadmin 242,   1  9月 24 16:59 57
 crw-rw-rw- 1 root     root      10, 196  9月 24 16:59 vfio
 ```
+
+</details>
 
 
 ### Opennebulaの設定(※フロントで設定)
