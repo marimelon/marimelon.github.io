@@ -19,3 +19,9 @@ sudo sh get-docker.sh
 
 sudo gpasswd -a ${USER} docker
 ```
+
+## Rclone Install
+
+```
+sudo -v ; curl https://rclone.org/install.sh | sudo bash
+```
