@@ -11,6 +11,12 @@ sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
 sudo resize2fs /dev/ubuntu-vg/ubuntu-lv
 ```
 
+## UbuntuVM ホスト名変更
+
+```
+hostnamectl set-hostname new.hostname.local
+```
+
 ## Dcoker Install
 
 ```
