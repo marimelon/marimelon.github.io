@@ -1,4 +1,4 @@
-# PortainerのEgdeAgent TunnelをTraefikでリバースプロキシする
+# [PortainerのEgdeAgent TunnelをTraefikでリバースプロキシする](https://marimelon.github.io/note/docker/portainer-traefik)
 
 Portainer ServerをTraefik Reverse Proxy経由で公開しているとき、Egde AgentからServerに接続する方法
 
