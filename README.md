@@ -1,4 +1,4 @@
-# [Marimelonのメモ帳](https://marimelon.github.io/README)
+# Marimelonのメモ帳
 
 ## 一覧
 
