@@ -31,3 +31,13 @@ sudo gpasswd -a ${USER} docker
 ```
 sudo -v ; curl https://rclone.org/install.sh | sudo bash
 ```
+
+## DiskIO 測定
+
+https://github.com/buty4649/fio-cdm
+
+※ fioのインストールが必要
+
+```
+curl -s https://raw.githubusercontent.com/buty4649/fio-cdm/master/fio-cdm | sh /dev/stdin /path/to/hoge
+```
