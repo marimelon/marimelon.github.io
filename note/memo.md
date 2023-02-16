@@ -41,3 +41,17 @@ https://github.com/buty4649/fio-cdm
 ```
 curl -s https://raw.githubusercontent.com/buty4649/fio-cdm/master/fio-cdm | sh /dev/stdin /path/to/hoge
 ```
+
+## 仮想マシンテンプレート作成
+
+- 構成情報初期化
+
+  ```
+  virt-sysprep -a vm.qcow2
+  ```
+
+- ディスクをスパース
+
+  ```
+  virt-sparsify from.qcow2 out.qcow2
+  ```
