@@ -1,4 +1,4 @@
-# [Marimelonのメモ帳](https://marimelon.github.io/README)
+# Marimelonのメモ帳
 
 ## 一覧
 
@@ -44,6 +44,10 @@ TunnelをTraefikでリバースプロキシする](./note/docker/portainer-traef
 <details open>
 <summary>vm_template</summary>
 
+- [備忘録：VM
+Tamplate
+UbuntuDesktop
+JP](./note/vm_template/ubuntu-desktop.md)
 - [備忘録：VM
 Tamplate
 UbuntuServer](./note/vm_template/ubuntu-server.md)
