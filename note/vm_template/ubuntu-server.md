@@ -1,4 +1,4 @@
-# 備忘録：VM Tamplate UbuntuServer
+# [備忘録：VM Tamplate UbuntuServer](https://marimelon.github.io/note/vm_template/ubuntu-server)
 
 ## Version
 Ubuntu Server 20.04
