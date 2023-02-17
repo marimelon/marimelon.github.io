@@ -1,4 +1,4 @@
-# [Marimelonのメモ帳](https://marimelon.github.io/README)
+# Marimelonのメモ帳
 
 ## 一覧
 
@@ -39,6 +39,14 @@ TunnelをTraefikでリバースプロキシする](./note/docker/portainer-traef
 <summary>other</summary>
 
 - [SynologyNasのMailServerでキャッチオールを設定する](./note/other/synology_nas/mail_server_catchall.md)
+
+</details>
+<details open>
+<summary>vm_template</summary>
+
+- [備忘録：VM
+Tamplate
+UbuntuServer](./note/vm_template/ubuntu-server.md)
 
 </details>
 <details open>
