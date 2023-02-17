@@ -24,6 +24,26 @@ Ubuntu Server 20.04
   ```
   userdel -r ubuntu
   ```
+
+- シリアルコンソールを有効化  
+  参考：https://qiita.com/wataash/items/b291cc0643d952d986d8
+
+  - /etc/default/grub を編集
+  ```
+  GRUB_TIMEOUT=2 # 変更
+
+  GRUB_TERMINAL="console serial" # 追加
+  GRUB_SERIAL_COMMAND="serial --speed=115200" # 追加
+
+  GRUB_CMDLINE_LINUX="console=tty1 console=ttyS0,115200"　# 変更
+  ```
+
+  - grub.cfgを生成  
+  ```
+  update-grub
+  ```
+
+
 - cloud-initを無効化
   ```
   touch /etc/cloud/cloud-init.disabled
