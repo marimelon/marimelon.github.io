@@ -1,4 +1,4 @@
-# 備忘録：VM Tamplate UbuntuDesktop JP
+# [備忘録：VM Tamplate UbuntuDesktop JP](https://marimelon.github.io/note/vm_template/ubuntu-desktop)
 
 ## Version
 Ubuntu Desktop 日本語 Remix 20.04  
