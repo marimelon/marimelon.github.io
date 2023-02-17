@@ -72,7 +72,7 @@ sysprep作業はVM内ではなく、ホスト上で実行する
   ```
   virt-sysprep -a vmdisk.qcow2 \
   --operations defaults,-ssh-hostkeys \
-  --firstboot-command '/bin/rm -v /etc/ssh/ssh_host_* && dpkg-reconfigure openssh-server && systemctl restart ssh' \
+  --firstboot-command '/bin/rm -v /etc/ssh/ssh_host_* && /usr/bin/ssh-keygen -A -v && systemctl restart ssh' \
   --firstboot-command '/bin/sh /usr/local/bin/_growpart_fs.sh'
   ```
 
