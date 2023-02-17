@@ -1,28 +1,26 @@
-# [備忘録：VM Tamplate UbuntuServer](https://marimelon.github.io/note/vm_template/ubuntu-server)
+# 備忘録：VM Tamplate UbuntuDesktop JP
 
 ## Version
-Ubuntu Server 20.04
+Ubuntu Desktop 日本語 Remix 20.04  
+(ubuntu-ja-22.04-desktop-amd64.iso)
 
-## 手順  
-1. インストールディスクから通常インストール  
-- ファイルシステムはLVMを選択
-- 初期ユーザは適当に作成 (例: ubuntu)
+## 手順
+1. インストールディスクから通常インストール 
+- ファイルシステムはext4を使用  
+  「インストールの種類」の高度な機能　-> なし(default)
+- 初期ユーザは展開後も使用する (例 ubuntu)
 
-2. 初期ユーザでログイン
-- rootユーザにパスワードを設定
-  ```
-  sudo passwd root
-  ```
+2. 初期ユーザでログイン  
+ログイン後端末(terminal)を開く
 
-- ログアウト
+- ホームディレクトリを英語化
   ```
-  exit
+  LANG=C xdg-user-dirs-gtk-update
   ```
 
-3. rootユーザでログイン
-- 初期ユーザを削除
+- rootユーザにスイッチ
   ```
-  userdel -r ubuntu
+  sudo su - root 
   ```
 
 - シリアルコンソールを有効化  
@@ -43,22 +41,20 @@ Ubuntu Server 20.04
   update-grub
   ```
 
-
-- cloud-initを無効化
-  ```
-  touch /etc/cloud/cloud-init.disabled
-  ```
-
-- rootユーザでsshを許可
-  - /etc/ssh/sshd_config  
-  ```
-  PermitRootLogin yes
-  ```
-
 - qemu-guest-agentをインストール
   ```
   apt install qemu-guest-agent
   systemctl enable qemu-guest-agent
+  ```
+
+- cloud-guest-utilsをインストール
+  ```
+  apt install cloud-guest-utils
+  ```
+
+- openssh-serverをインストール  
+  ```
+  apt install openssh-server
   ```
 
 - ファイルシステム拡張用スクリプト配置  
@@ -66,13 +62,7 @@ Ubuntu Server 20.04
   ```
   #!/bin/sh
   growpart /dev/sda 3 &&\
-  lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv &&\
-  resize2fs /dev/ubuntu-vg/ubuntu-lv
-  ```
-
-- シャットダウン
-  ```
-  shutdown now
+  resize2fs /dev/sda3
   ```
 
 4. virt-sysprep実行  
@@ -82,7 +72,7 @@ sysprep作業はVM内ではなく、ホスト上で実行する
   ```
   virt-sysprep -a vmdisk.qcow2 \
   --operations defaults,-ssh-hostkeys \
-  --firstboot-command '/bin/rm -v /etc/ssh/ssh_host_* && /usr/bin/ssh-keygen -A -v && systemctl restart ssh' \
+  --firstboot-command '/bin/rm -v /etc/ssh/ssh_host_* && dpkg-reconfigure openssh-server && systemctl restart ssh' \
   --firstboot-command '/bin/sh /usr/local/bin/_growpart_fs.sh'
   ```
 
