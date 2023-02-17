@@ -1,4 +1,4 @@
-# 備忘録：VM Tamplate CentOS7
+# [備忘録：VM Tamplate CentOS7](https://marimelon.github.io/note/vm_template/centos7-server)
 
 ## Version
 CentOS-7-x86_64-DVD-2207-02.iso
