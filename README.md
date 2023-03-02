@@ -1,4 +1,4 @@
-# [Marimelonのメモ帳](https://marimelon.github.io/README)
+# Marimelonのメモ帳
 
 ## 一覧
 
@@ -27,6 +27,9 @@ TunnelをTraefikでリバースプロキシする](./note/docker/portainer-traef
 
 - [CentOS7でのディスク拡張(LVM)](./note/linux/expand_disk_lvm_centos7.md)
 - [Ubuntu20.4でのディスク拡張(ext4)](./note/linux/expand_disk_ubuntu20.4.md)
+- [Ubuntu
+Cloud
+Imageのディスクを拡張する](./note/linux/expand_ubuntu_cloud_img_disk.md)
 - [JupyterHubの構築メモ](./note/linux/jupyter_hub_install_ubuntu20.4.md)
 - [OpenNebula構築手順記録
 (CentOS7)](./note/linux/opennebula_centos7.md)
@@ -44,6 +47,9 @@ TunnelをTraefikでリバースプロキシする](./note/docker/portainer-traef
 <details open>
 <summary>vm_template</summary>
 
+- [備忘録：VM
+Tamplate
+CentOS7](./note/vm_template/centos7-server.md)
 - [備忘録：VM
 Tamplate
 UbuntuDesktop
