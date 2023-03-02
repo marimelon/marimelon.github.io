@@ -1,4 +1,4 @@
-# Ubuntu Cloud Imageのディスクを拡張する
+# [Ubuntu Cloud Imageのディスクを拡張する](https://marimelon.github.io/note/linux/expand_ubuntu_cloud_img_disk)
 
 ## 背景
 
